@@ -1,0 +1,30 @@
+<!-- <main class="container"> -->
+  <div class="row">
+    <div class="col-xs-12 col-sm-3">
+      <app-filters (filterForm)="catchFiltersArray($event)"></app-filters>
+    </div>
+
+    <div class="col-xs-12 col-sm-9">
+      <div class="row">
+        <div class="col-xs-12">
+          <app-selected-filters [selectedFilters]=selectFilterArray></app-selected-filters>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <app-search (searchTerm)="catchSearchEvent($event)"></app-search>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <app-sort (sortOrder)="catchSortEvent($event)"></app-sort>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <app-character-details class="" [array]=array></app-character-details>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </main> -->

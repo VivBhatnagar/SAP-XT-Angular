@@ -1,0 +1,16 @@
+.filterBox{
+    padding:5px;
+}
+i{
+    line-height: inherit;
+}
+.category-parent {
+    padding-left:10%;
+    margin: 5px;
+    margin-bottom: 20px;
+    border:1px solid black;
+    border-radius: 5px;
+}
+p{
+    margin-left: 5px;
+}

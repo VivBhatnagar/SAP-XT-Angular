@@ -1,0 +1,10 @@
+<form #searchform="ngForm" (ngSubmit)="searchTermMethod(searchform.controls.searchterm.value)">
+
+    <label for="search">
+      Search By Name : 
+    </label>
+    <input name="searchterm" type="text" value="" ngModel required>
+
+  <button class="btn btn-primary" type="submit" >Search</button>
+
+</form>

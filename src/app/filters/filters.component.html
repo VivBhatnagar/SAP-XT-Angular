@@ -1,0 +1,53 @@
+<div class="container filter filterBox">
+  <div class="row">
+    <p class="col-sm-6">
+      Filters
+    </p>
+    <!-- <i class="fa fa-plus col-sm-6"></i> -->
+  </div>
+  <div class="category-parent">
+    <div class="row filter-category">
+      <p class="col-xs-12">
+        Species
+      </p>
+    </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <input name="Human" type="checkbox" value="human" ngModel required (click)="hasFilterData($event)">
+      <label for="human">Human</label>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-xs-12">
+      <input name="Alien" type="checkbox" value="alien" ngModel required (click)="hasFilterData($event)">
+      <label for="alien">Alien</label>
+    </div>
+  </div>
+</div>
+
+  <div class="category-parent">
+  <div class="row filter-category">
+    <p class="col-xs-12">
+      Gender
+    </p>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <input name="male" type="checkbox" value="male" ngModel required (click)="hasFilterData($event)">
+      <label for="species">Male</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <input name="female" type="checkbox" value="female" ngModel required (click)="hasFilterData($event)">
+      <label for="species">Female</label>
+    </div>
+  </div>
+</div>
+
+</div>

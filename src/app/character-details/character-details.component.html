@@ -1,0 +1,28 @@
+<div class="flex-container">
+  <div class="viv" *ngFor="let item of array.results">
+    <div class="viv-main">
+      <div class="card">
+        <img class="card-img-top char-img" src="{{item.image}}" alt="Card image">
+        <div class="card-img-overlay">
+          <p class="card-title"> {{ item.name }} <p>
+              <p class="card-text"> {{item.id}}</p>
+              <p class="card-text"> {{item.created}}</p>
+        </div>
+
+        <ul class="list-group ">
+          <li class="list-group-item card-content"> Status <span style="float: right;">{{item.status}} </span></li>
+          <li class="list-group-item card-content">Species <span style="float: right;">{{item.species}}</span></li>
+          <li class="list-group-item card-content">Gender <span style="float: right;">{{item.gender}}</span></li>
+          <li class="list-group-item card-content">Origin 
+            <a href={{item.origin.url}}>
+              <span style="float: right;"> {{item.origin.name}} </span>
+            </a>
+          </li>
+          <li class="list-group-item card-content">Location <a href={{item.location.url}}><span style="float: right;">{{item.location.name}}</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
